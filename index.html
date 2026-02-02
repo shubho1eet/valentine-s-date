@@ -46,6 +46,22 @@
     </div>
   </div>
 
+  <div id="finalCTAs" class="hidden flex flex-col gap-3 mt-6">
+  <button
+    id="replayButton"
+    class="rounded-md bg-pink-400 hover:bg-pink-500 text-white px-6 py-3 text-base font-medium transition">
+    Replay 💕
+  </button>
+
+  <a
+    id="whatsappButton"
+    href="https://wa.me/7607478373"
+    target="_blank"
+    class="rounded-md bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-base font-medium text-center transition">
+    Ping Me 💬
+  </a>
+</div>
+
   <script type="module">
     import confetti from 'https://cdn.skypack.dev/canvas-confetti';
     const yesButton = document.getElementById('yesButton');
@@ -95,11 +111,14 @@
         <span class="block text-4xl font-bold italic">Yayyy!! :3</span>
         <span class="block text-base font-normal not-italic mt-3"> I know it’s not much, but I made it just for you.\nI hope it made you smile, because seeing you smile is my favorite. </span>`; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
+      document.getElementById('finalCTAs').classList.remove('hidden');
+      document.getElementById('replayButton').addEventListener('click', () => {window.location.reload();
       confetti(); // Trigger confetti animation
     });
   </script>  
 </body>
 </html>
+
 
 
 
