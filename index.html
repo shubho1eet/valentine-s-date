@@ -110,14 +110,20 @@
       valentineQuestion.innerHTML = `
         <span class="block text-4xl font-bold italic">Yayyy!! :3</span>
         <span class="block text-base font-normal not-italic mt-3"> I know it’s not much, but I made it just for you.\nI hope it made you smile, because seeing you smile is my favorite. </span>`; // Change the question text
+      
       responseButtons.style.display = 'none'; // Hide both buttons
       document.getElementById('finalCTAs').classList.remove('hidden');
-      document.getElementById('replayButton').addEventListener('click', () => {window.location.reload();
       confetti(); // Trigger confetti animation
     });
+
+    document.getElementById('replayButton').addEventListener('click', () => {
+  window.location.reload();
+});
+
   </script>  
 </body>
 </html>
+
 
 
 
