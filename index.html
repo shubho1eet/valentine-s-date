@@ -33,6 +33,24 @@
     <div class="flex flex-col items-center p-4">
       <img id="imageDisplay" src="./images/image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
+
+      <!-- FINAL CTAs (hidden at first) -->
+      <div id="finalCTAs" class="hidden flex flex-col gap-3 mt-6">
+      <button
+        id="replayButton"
+        class="rounded-md bg-pink-400 hover:bg-pink-500 text-white px-6 py-3 text-base font-medium transition">
+        Replay 💕
+      </button>
+
+      <a
+        id="whatsappButton"
+        href="https://wa.me/XXXXXXXXXXX"
+        target="_blank"
+        class="rounded-md bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-base font-medium text-center transition">
+        Message me on WhatsApp 💬
+      </a>
+    </div>
+      
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
           class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition">
@@ -123,6 +141,7 @@
   </script>  
 </body>
 </html>
+
 
 
 
